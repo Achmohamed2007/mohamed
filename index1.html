@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة هبوط لمنتجات</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- العنوان الرئيسي -->
+    <header>
+        <div class="logo">شعار الشركة</div>
+        <nav>
+            <ul>
+                <li><a href="#products">المنتجات</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- قسم الترحيب -->
+    <section class="hero">
+        <h1>مرحبًا بكم في متجرنا</h1>
+        <p>تسوق الآن أفضل المنتجات بأفضل الأسعار</p>
+        <a href="#products" class="cta">تسوق الآن</a>
+    </section>
+
+    <!-- قسم المنتجات -->
+    <section id="products" class="products">
+        <div class="product">
+            <img src="imgs/download (6).jpeg" alt="Product 1">
+            <h2>منتج 1</h2>
+            <p>وصف مختصر للمنتج</p>
+            <p class="price">$20</p>
+            <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+        <div class="product">
+            <img src="imgs/images (3).jpeg" alt="Product 2">
+            <h2>منتج 2</h2>
+            <p>وصف مختصر للمنتج</p>
+            <p class="price">$30</p>
+            <button class="add-to-cart">أضف إلى السلة</button>
+        </div>
+    </section>
+
+    <!-- قسم السلة -->
+    <section class="cart">
+        <h2>سلة التسوق</h2>
+        <div class="cart-items">
+            <!-- يتم إضافة المنتجات هنا بواسطة جافاسكريبت -->
+        </div>
+        <p class="total">الإجمالي: $0</p>
+        <button class="checkout">إتمام الشراء</button>
+    </section>
+
+    <!-- نموذج الشراء -->
+    <section class="checkout-form">
+        <h2>إتمام الشراء</h2>
+        <form>
+            <label for="name">الاسم</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">البريد الإلكتروني</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">رقم الهاتف</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="address">العنوان</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="city">المدينة</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="country">الدولة</label>
+            <input type="text" id="country" name="country" required>
+            
+            <label for="postal-code">الرمز البريدي</label>
+            <input type="text" id="postal-code" name="postal-code" required>
+            
+            <label for="payment-method">طريقة الدفع</label>
+            <select id="payment-method" name="payment-method" required>
+                <option value="credit-card">بطاقة ائتمان</option>
+                <option value="paypal">بايبال</option>
+                <option value="cod">الدفع عند الاستلام</option>
+            </select>
+            
+            <button type="submit">تأكيد الطلب</button>
+        </form>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>&copy; 2024 متجرنا. جميع الحقوق محفوظة.</p>
+        <div class="social-media">
+            <a href="#">فيسبوك</a>
+            <a href="#">تويتر</a>
+            <a href="#">إنستغرام</a>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
